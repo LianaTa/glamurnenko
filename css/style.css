@@ -1,0 +1,259 @@
+/* Variables */
+:root {
+	--basic-black: #000000;
+	--basic-white: #ffffff;
+	--basic-light-brown: #94896d;
+	--basic-dark-gray: #2e2e2e;
+	--basic-light-gray: #e6e6e6;
+	--basic-gray2: #303030;
+	--basic-fucsia: #fe0b3b;
+	--basic-bright-pink: #fe0b3b;
+	--basic-dark-yellow: #ffd100;
+	--basic-dark-yellow2: #fed500;
+	--basic-yellow: #fff000;
+	--basic-blue: #29abe2;
+	
+}
+body{
+
+	background-color: var(--basic-black);
+	color: var(--basic-white);
+	background: url(../img/bg-main.png) #000000; /* Путь к фоновому изображению */
+	background-repeat: no-repeat;
+    background-position: top center;
+
+}
+header {
+	height: 100vh;
+}
+a {
+	text-decoration: none;
+	color: var(--basic-white);
+}
+a:hover {color: var(--basic-light-brown);}
+h2 {
+	font-family: 'Cormorant Garamond', serif;
+	color: var(--basic-dark-gray);
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+footer {
+	font-size: 10px;
+}
+.h1 {
+	font-family: 'Cormorant Garamond', serif;
+	color: var(--basic-dark-gray);
+}
+.content {
+	
+}
+.main-content {
+	min-width: 350px;
+	position: relative;
+	padding:0;
+	margin: 0;
+	background-color: var(--basic-white);
+	color: var(--basic-dark-gray);
+}
+/*Pink corner*/
+.corner-ribbon-6 {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+}
+.corner-ribbon-6::before, .corner-ribbon-6::after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    display: block;
+    border: 5px solid #2980b9;
+}
+.corner-ribbon-6 span {
+    position: absolute;
+    display: block;
+    width: 225px;
+    padding: 10px 0;
+    background-color: var(--basic-fucsia);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font: 700 18px/1 'Lato', sans-serif;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    text-align: center;
+}
+.corner-ribbon-6-top-left {
+    top: -10px;
+    left: -10px;
+}
+.corner-ribbon-6-top-left::before, .corner-ribbon-6-top-left::after {
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+.corner-ribbon-6-top-left::before {
+    top: 0;
+    right: 0;
+}
+.corner-ribbon-6-top-left::after {
+    left: 0;
+    bottom: 0;
+}
+.corner-ribbon-6-top-left span {
+    right: -25px;
+    top: 30px;
+    transform: rotate(-45deg);
+}
+/*navigation */
+.navpanel{
+	font-family: 'Open Sans Condensed', sans-serif;
+	background-color: var(--basic-black);
+}
+.navpanel__logo {
+
+}
+.navpanel__link {
+	color: var(--basic-light-brown);
+}
+.navpanel__caption {
+	color: var(--basic-white);
+}
+/*social icons*/
+.social_buttons {
+	padding:10px;
+}
+.social_buttons__icon {
+	fill:var(--basic-white);
+}
+.social_buttons__icon:hover {
+	fill:var(--basic-blue);
+}
+.social_buttons__icon:focus {
+	fill:var(--basic-black);
+}
+/*Contact Telephone*/
+.navpanel__telephone {
+	color:var(--basic-white);
+	text-align: right;
+}
+
+.description_process {
+	margin:0 auto;
+}
+.desription_process__holiday {
+	padding-left: 40px;
+}
+/*Table with prices*/
+.dark_yellow {
+	background-color: var(--basic-dark-yellow);
+}
+.offer {
+	margin: 0 auto;
+}
+.offer_price {
+	border-collapse: collapse;
+	background-color: var(--basic-yellow);
+	font-weight: bold;
+
+}
+.offer_price tr{
+	border:2px solid var(--basic-dark-yellow2);
+}
+.offer_price th {
+	background-color: var(--basic-dark-yellow);
+	border:2px solid var(--basic-dark-yellow2);
+	padding: 20px;
+}
+.offer_price td {
+	border:2px solid var(--basic-dark-yellow2);
+	padding:20px 0px;
+}
+.offer_price__valuta{
+	padding:5px;
+	border:1px solid var(--basic-black);
+}
+/*Buttons*/
+.btn_buy {
+	border-radius: 0;
+	background-color: var(--basic-black);
+	color: var(--basic-white);
+	font-weight: bold;
+}
+.btn_get {
+	width: 100%;
+	background-color: var(--basic-bright-pink);
+	color: var(--basic-white);
+	
+}
+.btn_up {
+	width: 100px;
+	margin: 0 auto;
+	border-radius: 0px;
+	background-color: var(--basic-black);
+	color: var(--basic-white);
+	border: 1px solid var(--basic-white);
+}
+.btn_up--icon {
+	fill: var(--basic-white);
+}
+/*Package offers*/
+.pack_offers {
+	
+}
+.pack_offers__list {
+	margin:0 auto;
+}
+.pack_offers__item {
+	border: 1px solid var(--basic-light-gray);
+	margin-right: 10px;
+	padding: 10px;
+	word-wrap: break-word;
+}
+.pack_offers__item:hover {
+	box-shadow: 0 0 5px 2px var(--basic-gray2);
+}
+.pack_offers__item__header {
+	font-size:20px;
+	color:var(--basic-black);
+	word-wrap: break-word;
+}
+.pack_offers__item__desc {
+	color: var(--basic-gray2);
+	margin-top: 20px;
+}
+.pack_offers__item_prices{
+	padding-top: 25px;
+}
+.pack_offers__item_prices--3 {
+	padding-top:47px;
+}
+.pack_offers_oldprice {
+	position: relative;
+}
+.pack_offers_oldprice:before {
+  border-bottom: 3px solid var(--basic-bright-pink);
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 50%;
+  transform: rotate(-18deg);
+}
+/*Example of work*/
+.howto {
+	padding-top: 20px;
+}
+.howto__stepslist {
+	margin: 0 auto;
+}
+.steplist__img {
+	width: 200px;
+}
+.steplist__caption {
+	padding-top:100px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 22px;
+	line-height: 20px;
+
+}
